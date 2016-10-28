@@ -6,3 +6,13 @@ Template: screenr
 Version: 1.0.0
 */
 
+/*#item1 {
+    background-image: url("/wp-content/uploads/2016/10/item1.png");
+}*/
+.features-content .features__item #item1{
+    margin-bottom: 0px;
+    display: inherit;
+    background-image: url(/wp-content/uploads/2016/10/item1.png);
+    margin-left: auto;
+    margin-right: auto;
+}
