@@ -496,6 +496,7 @@ if ( $layout != 'transparent' ) {
     <?php
     }
 
+
     $primary = get_theme_mod( 'primary_color' );
     if ( $primary ) {
         ?>
@@ -563,26 +564,9 @@ if ( $layout != 'transparent' ) {
         .section-news .entry-grid-elements {
             border-top-color: #<?php echo esc_attr( $primary ); ?>;
         }
+
         <?php
     }
-
-    $gallery_spacing = absint( get_theme_mod( 'gallery_spacing', 20 ) );
-    ?>
-    .gallery-carousel .g-item{
-        padding: 0px <?php echo intval( $gallery_spacing / 2 ); ?>px;
-    }
-    .gallery-carousel {
-        margin-left: -<?php echo intval( $gallery_spacing / 2 ); ?>px;
-        margin-right: -<?php echo intval( $gallery_spacing / 2 ); ?>px;
-    }
-    .gallery-grid .g-item, .gallery-masonry .g-item .inner {
-        padding: <?php echo intval( $gallery_spacing / 2 ); ?>px;
-    }
-    .gallery-grid, .gallery-masonry {
-        margin: -<?php echo intval( $gallery_spacing / 2 ); ?>px;
-    }
-    <?php
-
 
     $css = ob_get_clean();
     $custom = get_option( 'screenr_custom_css' );
@@ -712,6 +696,7 @@ function screenr_page_header_cover()
 add_action( 'screenr_after_site_header', 'screenr_page_header_cover' );
 
 
+
 if ( ! function_exists( 'screenr_admin_scripts' ) ) {
     /**
      * Enqueue scripts for admin page only: Theme info page
@@ -720,17 +705,52 @@ if ( ! function_exists( 'screenr_admin_scripts' ) ) {
     {
         if ($hook === 'widgets.php' || $hook === 'appearance_page_ft_screenr') {
             wp_enqueue_style('screenr-admin-css', get_template_directory_uri() . '/assets/css/admin.css');
-            // Add recommend plugin css
-            wp_enqueue_style( 'plugin-install' );
-            wp_enqueue_script( 'plugin-install' );
-            wp_enqueue_script( 'updates' );
-            add_thickbox();
         }
     }
 }
 add_action( 'admin_enqueue_scripts', 'screenr_admin_scripts' );
 
+/**
+ * Get theme actions required
+ *
+ * @return array|mixed|void
+ */
+function screenr_get_actions_required( ) {
 
+    $actions = array();
+    $front_page = get_option( 'page_on_front' );
+    $actions['page_on_front'] = 'dismiss';
+    $actions['page_template'] = 'dismiss';
+    if ( $front_page <= 0  ) {
+        $actions['page_on_front'] = 'active';
+        $actions['page_template'] = 'active';
+
+    } else {
+        if ( get_post_meta( $front_page, '_wp_page_template', true ) == 'template-frontpage.php' ) {
+            $actions['page_template'] = 'dismiss';
+        } else {
+            $actions['page_template'] = 'active';
+        }
+    }
+
+    $actions = apply_filters( 'screenr_get_actions_required', $actions );
+    $actions_dismiss =  get_option( 'screenr_actions_dismiss' );
+
+    if (  $actions_dismiss && is_array( $actions_dismiss ) ) {
+        foreach ( $actions_dismiss as $k => $v ) {
+            if ( isset ( $actions[ $k ] ) ) {
+                $actions[ $k ] = 'dismiss';
+            }
+        }
+    }
+
+    return $actions;
+}
+
+add_action('switch_theme', 'screenr_reset_actions_required');
+function screenr_reset_actions_required () {
+    delete_option('screenr_actions_dismiss');
+}
 
 /**
  * Output the status of widets for footer column.
