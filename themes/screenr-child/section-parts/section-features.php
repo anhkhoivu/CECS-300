@@ -69,7 +69,10 @@ if ( ! screenr_is_selective_refresh() ) {
                     $items_alt_text = array("Lipreaders miss out on up to ninety percent of the conversation.",
                             "One third of Deaf kids cannot communicate with their family.",
                             "Atleast ninety five percent of Deaf children are born to hearing parents.");
-                    echo '<img src="/wp-content/uploads/2016/10/item'.$count.'.png" alt="'.$items_alt_text[$count].'">';
+                    $items_post_links = array("/?p=81",
+                            "/?p=78",
+                            "/?p=75");
+                    echo '<a href="'.$items_post_links[$count-1].'" alt="'.$items_alt_text[$count-1].'"><img src="/wp-content/uploads/2016/10/item'.$count.'.png" alt=""></a>';
                     switch ($item['thumb_type']) {
                         case 'icon':
                             if ($item['icon']) {
