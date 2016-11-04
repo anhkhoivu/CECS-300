@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/4.6.1" created="2016-11-04 16:49" -->
+<!-- generator="WordPress/4.6.1" created="2016-11-04 18:07" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.1/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -27,18 +27,19 @@
 
 <channel>
 	<title>ASl Families Test</title>
-	<link>http://www.asl-families-2-testing.dev</link>
+	<link>http://www.asl-families.dev</link>
 	<description>Just another WordPress site</description>
-	<pubDate>Fri, 04 Nov 2016 16:49:28 +0000</pubDate>
+	<pubDate>Fri, 04 Nov 2016 18:07:53 +0000</pubDate>
 	<language></language>
 	<wp:wxr_version>1.1</wp:wxr_version>
-	<wp:base_site_url>http://www.asl-families-2-testing.dev</wp:base_site_url>
-	<wp:base_blog_url>http://www.asl-families-2-testing.dev</wp:base_blog_url>
+	<wp:base_site_url>http://www.asl-families.dev</wp:base_site_url>
+	<wp:base_blog_url>http://www.asl-families.dev</wp:base_blog_url>
 	<wp:author><wp:author_id>1</wp:author_id><wp:author_login>sonca</wp:author_login><wp:author_email>acnos.2010@gmail.com</wp:author_email><wp:author_display_name><![CDATA[sonca]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
-	<wp:author><wp:author_id>2</wp:author_id><wp:author_login>allenmuy300</wp:author_login><wp:author_email>allenmuy@gmail.com</wp:author_email><wp:author_display_name><![CDATA[allenmuy300]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
+	<wp:author><wp:author_id>2</wp:author_id><wp:author_login>Alejandro</wp:author_login><wp:author_email>alejandrom060595@gmail.com</wp:author_email><wp:author_display_name><![CDATA[Alejandro]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
+	<wp:author><wp:author_id>3</wp:author_id><wp:author_login>allenmuy300</wp:author_login><wp:author_email>allenmuy@gmail.com</wp:author_email><wp:author_display_name><![CDATA[allenmuy300]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
 	<item>
 		<title>The Fact</title>
-		<link>http://www.asl-families-2-testing.dev/?acf=acf_the-fact</link>
+		<link>http://www.asl-families.dev/?acf=acf_the-fact</link>
 		<pubDate>Wed, 02 Nov 2016 21:42:28 +0000</pubDate>
 		<dc:creator>sonca</dc:creator>
 		<guid isPermaLink="false">http://www.asl-families-2-testing.dev/?post_type=acf&#038;p=91</guid>
@@ -63,7 +64,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_581a5d088b77f</wp:meta_key>
-			<wp:meta_value><![CDATA[a:13:{s:3:"key";s:19:"field_581a5d088b77f";s:5:"label";s:11:"Description";s:4:"name";s:11:"description";s:4:"type";s:8:"textarea";s:12:"instructions";s:0:"";s:8:"required";s:1:"1";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:9:"maxlength";s:0:"";s:4:"rows";s:1:"2";s:10:"formatting";s:2:"br";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";s:5:"value";s:0:"";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:4;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:13:{s:3:"key";s:19:"field_581a5d088b77f";s:5:"label";s:11:"Description";s:4:"name";s:11:"description";s:4:"type";s:8:"textarea";s:12:"instructions";s:0:"";s:8:"required";s:1:"0";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:9:"maxlength";s:0:"";s:4:"rows";s:1:"2";s:10:"formatting";s:2:"br";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:2:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:4;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>position</wp:meta_key>
@@ -79,11 +80,11 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_581a5f39b53f7</wp:meta_key>
-			<wp:meta_value><![CDATA[a:14:{s:3:"key";s:19:"field_581a5f39b53f7";s:5:"label";s:14:"Link of Source";s:4:"name";s:14:"link_of_source";s:4:"type";s:4:"text";s:12:"instructions";s:0:"";s:8:"required";s:1:"1";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:10:"formatting";s:4:"html";s:9:"maxlength";s:0:"";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";s:5:"value";s:0:"";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:6;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:14:{s:3:"key";s:19:"field_581a5f39b53f7";s:5:"label";s:14:"Link of Source";s:4:"name";s:14:"link_of_source";s:4:"type";s:4:"text";s:12:"instructions";s:0:"";s:8:"required";s:1:"0";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:10:"formatting";s:4:"html";s:9:"maxlength";s:0:"";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:2:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:6;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_581a614d0de4a</wp:meta_key>
-			<wp:meta_value><![CDATA[a:14:{s:3:"key";s:19:"field_581a614d0de4a";s:5:"label";s:12:"Name of Link";s:4:"name";s:12:"name_of_link";s:4:"type";s:4:"text";s:12:"instructions";s:0:"";s:8:"required";s:1:"1";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:10:"formatting";s:4:"html";s:9:"maxlength";s:0:"";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";s:5:"value";s:0:"";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:5;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:14:{s:3:"key";s:19:"field_581a614d0de4a";s:5:"label";s:12:"Name of Link";s:4:"name";s:12:"name_of_link";s:4:"type";s:4:"text";s:12:"instructions";s:0:"";s:8:"required";s:1:"0";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:10:"formatting";s:4:"html";s:9:"maxlength";s:0:"";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:2:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:5;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_581c20df3395f</wp:meta_key>
