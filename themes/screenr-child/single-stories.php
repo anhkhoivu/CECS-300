@@ -9,8 +9,6 @@
 
 get_header(); ?>
 
-<p>hello</p>
-
 	<div id="content" class="site-content">
 
 	
