@@ -1,0 +1,10 @@
+Directions for importing advanced custom fields
+
+1. Navigate to Tools » Import and select WordPress
+
+2. Install WP import plugin if prompted
+
+3. Upload and import your exported .xml file
+
+4. Select your user and ignore Import Attachments
+
