@@ -48,14 +48,14 @@
 
 		<!-- Story meta content -->
 		<div id="story-meta">
-			<b>image:</b>
-				<img
-					src="<?php echo $image[url]; ?>"
-					alt="<?php echo $image[alt]; ?>"
-					width="<?php echo $image_width; ?>"
-					height="<?php echo $image_height; ?>"
-					aria-describedby="<?php echo $aria_described_by; ?>"
-				>
+			
+			<img
+				src="<?php echo $image[url]; ?>"
+				alt="<?php echo $image[alt]; ?>"
+				width="<?php echo $image_width; ?>"
+				height="<?php echo $image_height; ?>"
+				aria-describedby="<?php echo $aria_described_by; ?>"
+			>
 
 				
 			<br>
