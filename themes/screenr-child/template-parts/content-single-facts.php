@@ -76,6 +76,7 @@
 		</div><!-- #story-meta -->
 		
 		<!-- Summary: bringing in WP's default content editor -->
+		<h2>Summary</h2>
 		<div id="editor-content">
 			<?php
 				the_content( sprintf(
