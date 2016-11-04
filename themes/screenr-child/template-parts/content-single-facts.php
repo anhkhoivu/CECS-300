@@ -76,8 +76,8 @@
 		</div><!-- #story-meta -->
 		
 		<!-- Summary: bringing in WP's default content editor -->
-		<h2>Summary</h2>
 		<div id="editor-content">
+		<h2>Summary</h2>
 			<?php
 				the_content( sprintf(
 					/* translators: %s: Name of current post. */
