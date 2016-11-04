@@ -48,14 +48,14 @@
 
 		<!-- Story meta content -->
 		<div id="story-meta">
-			<b>image:</b>
-				<img
-					src="<?php echo $image[url]; ?>"
-					alt="<?php echo $image[alt]; ?>"
-					width="<?php echo $image_width; ?>"
-					height="<?php echo $image_height; ?>"
-					aria-describedby="<?php echo $aria_described_by; ?>"
-				>
+			
+			<img
+				src="<?php echo $image[url]; ?>"
+				alt="<?php echo $image[alt]; ?>"
+				width="<?php echo $image_width; ?>"
+				height="<?php echo $image_height; ?>"
+				aria-describedby="<?php echo $aria_described_by; ?>"
+			>
 
 				
 			<br>
@@ -77,6 +77,7 @@
 		
 		<!-- Summary: bringing in WP's default content editor -->
 		<div id="editor-content">
+		<h2>Summary</h2>
 			<?php
 				the_content( sprintf(
 					/* translators: %s: Name of current post. */
