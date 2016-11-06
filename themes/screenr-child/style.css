@@ -6,10 +6,20 @@ Template: screenr
 Version: 1.0.0
 */
 
-.nav-menu a:hover {
-	color: #e86240;
+.nav-menu a:hover 
+{
+	color: #0D5591;
 }
 
+.nav-menu a:focus 
+{
+	color: #0D5591;
+}
+
+*:focus
+{
+	color: #0D5591;
+}
 #client0 img {
   margin-top: 13%;
 }
