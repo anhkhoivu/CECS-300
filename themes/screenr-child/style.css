@@ -6,10 +6,55 @@ Template: screenr
 Version: 1.0.0
 */
 
-.nav-menu a:hover {
-	color: #e86240;
+
+/*#item1 {
+    background-image: url("/wp-content/uploads/2016/10/item1.png");
+}*/
+.features-content .features__item #item1{
+    margin-bottom: 0px;
+    display: inherit;
+    background-image: url(/wp-content/uploads/2016/10/item1.png);
+    margin-left: auto;
+    margin-right: auto;
 }
 
+
+/* Story and Facts Archive Page CSS */
+/* --------------------------------------------- */
+#story-description, #fact-description{
+	/*border: red 2px dashed; /*test*/
+	width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+	padding-top: 10px;
+	margin-top: 10px;
+	font-style: italic;
+	letter-spacing: 1px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#content-inside{
+	/*border: red 2px dashed; /*test*/
+}
+/* --------------------------------------------- */
+/* END of Story and Facts Archive Page CSS */
+
+
+.nav-menu a:hover 
+{
+	color: #0D5591;
+}
+
+.nav-menu a:focus 
+{
+	color: #0D5591;
+}
+
+*:focus
+{
+	color: #0D5591;
+}
 #client0 img {
   margin-top: 13%;
 }
@@ -29,3 +74,4 @@ Version: 1.0.0
 #client4 img {
   margin-top: 8%;
 }
+
