@@ -1,8 +1,4 @@
 ------------------------------------------------------------------------------------------------------------------
-Version 2.1.0.1
-    - Fixed an issue with the Paragraph field validation when a max character limit is not configured.
-
-------------------------------------------------------------------------------------------------------------------
 Version 2.1
 	- Updated the field visibility setting to make it more clear and to allow fields marked as hidden to be part of conditional logic.
 

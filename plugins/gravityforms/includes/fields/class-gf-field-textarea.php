@@ -139,15 +139,15 @@ class GF_Field_Textarea extends GF_Field {
 		return sprintf( "<div class='ginput_container ginput_container_textarea'>%s</div>", $input );
 	}
 
-	public function validate( $value, $form ) {
-		if ( ! is_numeric( $this->maxLength ) ) {
-			return;
-		}
+	public function validate( $value, $form ){
 
 		$value = strip_tags( $value );
-		if ( strlen( $value ) > $this->maxLength ) {
+		if( strlen( $value ) > $this->maxLength ){
 			$this->failed_validation  = true;
 			$this->validation_message = empty( $this->errorMessage ) ? esc_html__( 'The text entered exceeds the maximum number of characters.', 'gravityforms' ) : $this->errorMessage;
+		}
+		else{
+			parent::validate( $value, $form );
 		}
 	}
 
