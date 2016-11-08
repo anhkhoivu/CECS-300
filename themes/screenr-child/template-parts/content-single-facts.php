@@ -40,10 +40,8 @@
 			$image_width = get_field('image_width');
 			$image_height = get_field('image_height');
 			$aria_described_by = get_field('aria_described_by');
-			$description = get_field('description');
 			$name_of_link = get_field('name_of_link');
 			$link_of_source = get_field('link_of_source');
-			
 		?>
 
 		<!-- Story meta content -->
@@ -56,10 +54,6 @@
 				height="<?php echo $image_height; ?>"
 				aria-describedby="<?php echo $aria_described_by; ?>"
 			>
-
-				
-			<br>
-			<b>Description:</b> <?php echo $description;?>
 			
 			
 			<br>
@@ -74,6 +68,8 @@
 			
 		
 		</div><!-- #story-meta -->
+		
+		<hr>
 		
 		<!-- Summary: bringing in WP's default content editor -->
 		<div id="editor-content">
