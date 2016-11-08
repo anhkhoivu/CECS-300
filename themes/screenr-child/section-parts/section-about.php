@@ -40,7 +40,7 @@ $classes = 'screenr-section section-about section-padding section-padding-larger
                         Hosting a family friendly event where ASL is the primary 
                         language, or where interpreters are provided? 
                         <a href="https://www.eventida.com/list/aslfamilies#post">
-                        Add your event to our collection!</a>
+                        Add your event to our collection!</a> 
                     </div>
                 </div>
                 <?php
