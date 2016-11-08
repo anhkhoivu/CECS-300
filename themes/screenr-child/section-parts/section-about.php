@@ -34,11 +34,13 @@ $classes = 'screenr-section section-about section-padding section-padding-larger
                             the_excerpt();
                         }
                         ?> -->
-                        Faucibus ornare dictumst metus quis senectus luctus maecenas auctor, lacus dapibus orci potenti habitant
+                        Visit our collection of events throughout USA and Canada. 
+                        Subscribe to updates and new events in your area.<br><br>
 
-                        <br>Sagittis lobortis est commodo nisl scelerisque ac dapibus fringilla pharetra pretium, felis rutrum mi lacinia
-
-                        <br><br><a href="/?page_id=15">Go to Events Page</a>
+                        Hosting a family friendly event where ASL is the primary 
+                        language, or where interpreters are provided? 
+                        <a href="https://www.eventida.com/list/aslfamilies#post">
+                        Add your event to our collection!</a> 
                     </div>
                 </div>
                 <?php
