@@ -7,7 +7,7 @@
  * @package Screenr
  */
 
-get_header(); ?>
+get_header(facts); ?>
 
 	<div id="content" class="site-content">
 
