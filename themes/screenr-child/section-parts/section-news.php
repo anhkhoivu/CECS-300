@@ -4,6 +4,7 @@ $subtitle   = get_theme_mod( 'news_subtitle', esc_html__( 'Section subtitle', 's
 $desc       = get_theme_mod( 'news_desc' );
 
 $latest_posts = new WP_Query( array(
+    'post_type' => 'stories',
     'posts_per_page'      => absint( get_theme_mod( 'news_num_post', 3 ) ),
     'ignore_sticky_posts' => true,
 ) );
