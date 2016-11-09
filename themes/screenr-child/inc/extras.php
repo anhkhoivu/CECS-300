@@ -632,6 +632,7 @@ function screenr_page_header_cover()
         $desc  = get_the_archive_description();
     }
 
+	$title ='test';
     if ( ! $image ) {
         $image = get_header_image();
     }
@@ -710,6 +711,8 @@ function screenr_page_header_cover()
 }
 
 add_action( 'screenr_after_site_header', 'screenr_page_header_cover' );
+
+
 
 
 if ( ! function_exists( 'screenr_admin_scripts' ) ) {
