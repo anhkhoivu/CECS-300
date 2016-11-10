@@ -21,7 +21,7 @@ Version: 1.0.0
 
 /* Story and Facts Archive Page CSS */
 /* --------------------------------------------- */
-#story-description, #fact-description{
+#story-description, #fact-description, .swiper-slide-desc{
 	/*border: red 2px dashed; /*test*/
 	width: 65%;
     margin-left: auto;

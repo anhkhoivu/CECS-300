@@ -4,6 +4,7 @@ $subtitle   = get_theme_mod( 'news_subtitle', esc_html__( 'Section subtitle', 's
 $desc       = get_theme_mod( 'news_desc' );
 
 $latest_posts = new WP_Query( array(
+    'post_type' => 'stories',
     'posts_per_page'      => absint( get_theme_mod( 'news_num_post', 3 ) ),
     'ignore_sticky_posts' => true,
 ) );
@@ -39,7 +40,7 @@ $classes = 'section-news section-padding section-padding-lg';
             <div class="section-title-area">
                 <?php if ( $subtitle ) { ?><div class="section-subtitle"><?php echo esc_html( $subtitle ); ?></div><?php } ?>
                 <?php if ( $title ) { ?><h2 class="section-title"><?php echo esc_html( $title ); ?></h2><?php } ?>
-                <?php if ( $desc ) { ?><div class="section-desc"><?php echo apply_filters( 'screenr_content_text', $desc ); ?></div><?php } ?>
+                
             </div>
         <?php } ?>
         <div class="section-content section-news-content">
@@ -78,6 +79,7 @@ $classes = 'section-news section-padding section-padding-lg';
 
             </div>
         </div>
+        <?php if ( $desc ) { ?><div class="section-desc" style="text-align: center;"><?php echo apply_filters( 'screenr_content_text', $desc ); ?></div><?php } ?>
     </div>
 <?php if ( ! screenr_is_selective_refresh() ) { ?>
 </section>
