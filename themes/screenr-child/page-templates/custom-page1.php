@@ -5,6 +5,35 @@ Template Name: A Custom Page Template (1)
 
 get_header(); ?>
 
+<?php
+function wpdocs_custom_excerpt_length( $length ) {
+    return 13;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+?>
+
+<?php
+    $new_loop = new WP_Query( array(
+    'post_type' => 'stories',
+        'posts_per_page' => 3 // put number of posts that you'd like to display
+    ) );
+?>
+<?php if ( $new_loop->have_posts() ) : ?>
+    <?php while ( $new_loop->have_posts() ) : $new_loop->the_post(); ?>
+          <h2><?php the_title(); ?></h2>
+          <?php //the_content(); ?>
+		  <p>the excerpt</p>
+		  <?php the_excerpt(); ?>
+		  
+		  
+		  
+		  
+    <?php endwhile;?>
+<?php else: ?>
+<?php endif; ?>
+<?php wp_reset_query(); ?>
+
+
 	<div id="content" class="site-content">
 
 		<div id="content-inside" class="container <?php echo esc_attr( get_theme_mod( 'layout_settings', 'right' ) ); ?>-sidebar">
