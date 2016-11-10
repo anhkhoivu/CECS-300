@@ -119,6 +119,7 @@ if ( ! screenr_is_selective_refresh() ) {
     }
     wp_reset_postdata();
     ?>
+    <?php if ( $desc ) { ?><div class="section-desc"><?php echo apply_filters( 'screenr_content_text', $desc ); ?></div><?php } ?>
 <?php if ( ! screenr_is_selective_refresh() ) { ?>
 </section>
 <?php }
