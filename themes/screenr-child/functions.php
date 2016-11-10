@@ -5,7 +5,7 @@ add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
 	}
 	
 /**
- * Setup page header cover - story test
+ * Setup page header cover - story
  *
  * @return bool
  */
