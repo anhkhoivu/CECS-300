@@ -4,8 +4,9 @@ add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
 	function enqueue_parent_styles() { wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css' ); 
 	}
 	
+	
 /**
- * Setup page header cover - story test
+ * Setup page header cover - story
  *
  * @return bool
  */
@@ -35,7 +36,19 @@ function screenr_page_header_cover_stories()
         $desc  = get_the_archive_description();
     }
 */
+
+
+	global $wp_post_types;
+	$post_type = 'stories';
+				
 	$title = 'Our Stories';
+	$image = '/wp-content/images/father.jpg';
+	$desc = $wp_post_types[$post_type]->description;
+	
+	
+	
+
+	
 	
     if ( ! $image ) {
         $image = get_header_image();
@@ -117,6 +130,7 @@ function screenr_page_header_cover_stories()
 add_action( 'screenr_after_site_header_stories', 'screenr_page_header_cover_stories' );
 //asd
 
+
 //facts header banner
 /**
  * Setup page header cover - facts
@@ -149,7 +163,14 @@ function screenr_page_header_cover_facts()
         $desc  = get_the_archive_description();
     }
 */
+	global $wp_post_types;
+	$post_type = 'facts';
+	
 	$title = 'The Facts';
+	$image = '/wp-content/images/family.jpg';
+	$desc = $wp_post_types[$post_type]->description;
+
+	
 	
     if ( ! $image ) {
         $image = get_header_image();
