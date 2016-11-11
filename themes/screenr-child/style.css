@@ -41,12 +41,12 @@ Version: 1.0.0
 /* END of Story and Facts Archive Page CSS */
 
 
-.nav-menu a:hover 
+.nav-menu a:hover
 {
 	color: #0D5591;
 }
 
-.nav-menu a:focus 
+.nav-menu a:focus
 {
 	color: #0D5591;
 }
@@ -55,6 +55,9 @@ Version: 1.0.0
 {
 	color: #0D5591;
 }
+/* Fellow Activists Page CSS */
+/* --------------------------------------------- */
+
 #client0 img {
   margin-top: 13%;
 }
@@ -75,3 +78,17 @@ Version: 1.0.0
   margin-top: 8%;
 }
 
+.client-col img {
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.client-col img:hover {
+	-moz-transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
+/* --------------------------------------------- */
+/* Fellow Activists Page CSS */
