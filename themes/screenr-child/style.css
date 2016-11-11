@@ -51,10 +51,18 @@ Version: 1.0.0
 	color: #0D5591;
 }
 
-*:focus
+.nav-menu *:focus
 {
+	border: 1px solid #0D5591;
 	color: #0D5591;
 }
+
+*:focus
+{
+	border: 1px solid #0D5591;
+	color: #0D5591;
+}
+
 #client0 img {
   margin-top: 13%;
 }
