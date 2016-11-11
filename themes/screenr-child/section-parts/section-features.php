@@ -69,9 +69,9 @@ if ( ! screenr_is_selective_refresh() ) {
                     $items_alt_text = array("Lipreaders miss out on up to ninety percent of the conversation.",
                             "One third of Deaf kids cannot communicate with their family.",
                             "Atleast ninety five percent of Deaf children are born to hearing parents.");
-                    $items_post_links = array("http://www.asl-families.dev/facts/lipreaders-miss-out-on-up-to-90-of-the-conversation/",
-                            "http://www.asl-families.dev/facts/one-out-of-three-deaf-kids-cannot-communicate-with-their-family/",
-                            "http://www.asl-families.dev/facts/over-95-of-deaf-children-are-born-to-hearing-parents/");
+                    $items_post_links = array("/facts/lipreaders-miss-out-on-up-to-90-of-the-conversation/",
+                            "/facts/one-out-of-three-deaf-kids-cannot-communicate-with-their-family/",
+                            "/facts/over-95-of-deaf-children-are-born-to-hearing-parents/");
                     echo '<a href="'.$items_post_links[$count-1].'" alt="'.$items_alt_text[$count-1].'"><img src="/wp-content/uploads/2016/10/item'.$count.'.png" alt=""></a>';
                     switch ($item['thumb_type']) {
                         case 'icon':
@@ -119,6 +119,7 @@ if ( ! screenr_is_selective_refresh() ) {
     }
     wp_reset_postdata();
     ?>
+    <?php if ( $desc ) { ?><div class="section-desc"  style="text-align: center;"><?php echo apply_filters( 'screenr_content_text', $desc ); ?></div><?php } ?>
 <?php if ( ! screenr_is_selective_refresh() ) { ?>
 </section>
 <?php }
