@@ -41,7 +41,7 @@ function screenr_page_header_cover_stories()
 	global $wp_post_types;
 	$post_type = 'stories';
 				
-	$title = 'Our Stories';
+	$title = 'Stories';
 	$image = '/wp-content/images/father.jpg';
 	$desc = $wp_post_types[$post_type]->description;
 	
@@ -254,7 +254,7 @@ add_action( 'screenr_after_site_header_facts', 'screenr_page_header_cover_facts'
 function screenr_loop_post_item( $post_class = '')
 {
     $category = get_the_category();
-    if($category[0]->cat_name == "Our Stories") {
+    if($category[0]->cat_name == "Stories") {
     ?>
     
     <article id="post-<?php the_ID(); ?>" <?php post_class($post_class); ?>>
