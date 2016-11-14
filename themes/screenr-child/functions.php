@@ -4,7 +4,11 @@ add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
 	function enqueue_parent_styles() { wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css' ); 
 	}
 	
-	
+function add_custom_script() {
+    wp_register_script('custom_script', home_url() . '/wp-content/themes/screenr-child/js/custom_script.js', array( 'jquery' ));
+    wp_enqueue_script('custom_script');
+}  
+add_action( 'wp_enqueue_scripts', 'add_custom_script' );
 /**
  * Setup page header cover - story
  *
