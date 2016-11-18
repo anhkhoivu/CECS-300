@@ -18,7 +18,6 @@ Version: 1.0.0
     margin-right: auto;
 }
 
-
 /* Story and Facts Archive Page CSS */
 /* --------------------------------------------- */
 #story-description, #fact-description, .swiper-slide-desc{
@@ -51,16 +50,10 @@ Version: 1.0.0
 	color: #0D5591;
 }
 
-.nav-menu *:focus
+.site-footer *:focus
 {
-	border: 1px solid #0D5591;
-	color: #0D5591;
-}
-
-*:focus
-{
-	border: 1px solid #0D5591;
-	color: #0D5591;
+	border: 1px solid #FFFFE0;
+	color: #FFFFE0;
 }
 <<<<<<< HEAD
 =======

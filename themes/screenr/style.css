@@ -521,6 +521,16 @@ input[type="radio"], input[type="checkbox"] {
 /*------------------------------
 	2.8 Accessibility
 ------------------------------*/
+.visually-hidden {
+	border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
 /*------------------------------
 	2.9 Alignments
 ------------------------------*/
@@ -688,6 +698,17 @@ input[type="radio"], input[type="checkbox"] {
 		border-left: 1px solid #e9e9e9;
 		margin-left: -1px;
 	}
+}
+
+.visually-hidden {
+	border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 
 /*--------------------------------------------------------------
