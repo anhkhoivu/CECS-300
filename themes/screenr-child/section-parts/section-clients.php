@@ -25,7 +25,7 @@ $classes = 'section-clients section-padding section-padding-lg screenr-section';
             }
             ?>
             <div class="section-client-content">
-                <div class="clients-wrapper client-<?php echo esc_attr( $layout ); ?>-cols">
+                <div class="clients-wrapper client-6-cols"> <!-- <?php echo esc_attr( $layout ); ?> -->
                     <?php
                     $count = 0;
                     foreach ( $items as $item ){
@@ -48,7 +48,15 @@ $classes = 'section-clients section-padding section-padding-lg screenr-section';
                         <?php
                         $count++;
                     }// end loop items
+                    //this section is for extra activist
                     ?>
+                    <div class="client-col" id="client5" title="Nyle DiMarco Foundation">
+                        <a title="Nyle DiMarco Foundation" href="https://nyledimarcofoundation.com/about/">
+                        <img src="/wp-content/uploads/2016/11/NDF-Logo.png" alt="Nyle DiMarco Foundation">
+                        </a>
+                    </div>
+                    <!-- end extra activist -->
+                    
                 </div><!-- /.clients-wrapper -->
             </div>
             <?php

@@ -3,20 +3,22 @@ Theme Name: Screenr
 Theme URI: https://www.famethemes.com/themes/screenr
 Author: FameThemes
 Author URI: https://www.famethemes.com
+<<<<<<< HEAD
+Description: Big - Bold and stylish, Screenr is a multiuse fullscreen theme well suited for business, portfolio, digital agency, product showcase, freelancers and everyone else who appreciate good design. Also with the flexible of the header and navigation, it can be use for one page or multiple pages website. The theme was built on Bootstrap 4, so you know it contains clean, precise code that makes for a highly streanlined site. (Live preview : http://www.famethemes.com/preview/?theme=Screenr)
+Version: 1.1.0
+=======
 Description: Big - Bold and stylish, Screenr is a multiuse fullscreen theme well suited for business, portfolio, digital agency, product showcase, freelancers and everyone else who appreciate good design. Also with the flexible of the header and navigation, it can be use for one page or multiple pages website. The theme was built on Bootstrap 4, so you know it contains clean, precise code that makes for a highly streamlined site. (Live preview : http://www.famethemes.com/preview/?theme=Screenr)
 
 Version: 1.1.1
+>>>>>>> 3660d10a35faeccf410ce2855c1d7618aff2f5f3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: screenr
 Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-logo, editor-style, featured-image-header, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog, portfolio
-
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
-
 Screenr is based on Underscores http://underscores.me/, (C) 2016 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
-
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
@@ -32,7 +34,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 7.0  Widgets
 8.0  Sections
 9.0  External Plugins
-
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 2.0 Document Setup
@@ -520,6 +521,16 @@ input[type="radio"], input[type="checkbox"] {
 /*------------------------------
 	2.8 Accessibility
 ------------------------------*/
+.visually-hidden {
+	border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
 /*------------------------------
 	2.9 Alignments
 ------------------------------*/
@@ -687,6 +698,17 @@ input[type="radio"], input[type="checkbox"] {
 		border-left: 1px solid #e9e9e9;
 		margin-left: -1px;
 	}
+}
+
+.visually-hidden {
+	border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 
 /*--------------------------------------------------------------
@@ -950,7 +972,7 @@ input[type="radio"], input[type="checkbox"] {
 .nav-menu ul {
 	min-width: 12em;
 	*width: 12em;
-	border: 1px solid #e9e9e9;
+	border: 1px solid #0D5591;
 	border-top: none;
 }
 
@@ -962,7 +984,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 .nav-menu li.current-menu-item > a {
-	color: #e86240;
+	color: #0D5591;
 }
 
 .nav-menu li:hover,
@@ -972,7 +994,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 .nav-menu a {
-	color: #333333;
+	color: #0D5591;
 	padding-left: 17px;
 	padding-right: 17px;
 	font-size: 14px;
@@ -982,7 +1004,12 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 .nav-menu a:hover {
-	color: #e86240;
+	color: #0D5591;
+}
+
+.nav-menu a:focus {
+	color: #0D5591;
+	border: 2px solid #0D5591;
 }
 
 .nav-menu ul li {
@@ -990,9 +1017,9 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 .nav-menu ul li a {
-	border-top: 1px solid #e9e9e9;
+	border-top: 1px solid #0D5591;
 	padding: 8px 18px;
-	color: #999999;
+	color: #0D5591;
 	font-size: 13px;
 	text-transform: none;
 	background: #ffffff;
@@ -1000,15 +1027,15 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 .nav-menu ul li a:hover {
-	color: #e86240;
+	color: #0D5591;
 }
 
 .nav-menu li.onepress-current-item > a {
-	color: #e86240;
+	color: #0D5591;
 }
 
 .nav-menu ul li.current-menu-item > a {
-	color: #e86240;
+	color: #0D5591;
 }
 
 .nav-menu > li:last-child > a {
@@ -1016,7 +1043,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 .nav-menu > li a.menu-actived {
-	color: #e86240;
+	color: #0D5591;
 }
 
 .nav-menu .nav-toggle-subarrow {
@@ -1025,7 +1052,7 @@ input[type="radio"], input[type="checkbox"] {
 
 @media screen and (min-width: 1140px) {
 	.sticky-header.transparent .nav-menu > li > a {
-		color: #ffffff;
+		color: #0D5591;
 		position: relative;
 	}
 	.sticky-header.transparent .nav-menu > li > a::after {
@@ -1081,7 +1108,7 @@ input[type="radio"], input[type="checkbox"] {
 		width: 100%;
 		background: transparent;
 		z-index: 100;
-		border-bottom: 1px solid #e9e9e9;
+		border-bottom: 1px solid #0D5591;
 	}
 	.nav-menu.nav-menu-mobile > li > a {
 		padding: 12px 20px;
@@ -1118,22 +1145,22 @@ input[type="radio"], input[type="checkbox"] {
 	.nav-menu.nav-menu-mobile li {
 		line-height: 20px;
 		background: #FFFFFF;
-		border-top: 1px solid #e9e9e9;
+		border-top: 1px solid #0D5591;
 		width: 100% !important;
 	}
 	.nav-menu.nav-menu-mobile li.nav-current-item > a {
-		color: #e86240;
+		color: #0D5591;
 	}
 	.nav-menu.nav-menu-mobile a {
-		color: #777777;
+		color: #0D5591;
 	}
 	.nav-menu.nav-menu-mobile a:hover {
-		color: #000000;
+		color: #0D5591;
 	}
 	.nav-menu.nav-menu-mobile .nav-toggle-subarrow {
 		display: block;
-		color: #999999;
-		border-left: 1px solid #e9e9e9;
+		color: #0D5591;
+		border-left: 1px solid #0D5591;
 		font-weight: normal;
 		position: absolute;
 		top: 0;
@@ -2427,14 +2454,12 @@ ul.hours span {
 	/*
 		img, video {
 			position: absolute;
-
 			min-width: 100.011111%;
 			min-height: 100.011111%;
 			max-width: initial;
 			max-height: initial;
 			height: initial;
 			width: initial;
-
 			top: 50.01111111%;
 			left: 50.01111111%;
 			-webkit-transform: translate(-50.01111111%, -50.01111111%);
@@ -4749,6 +4774,9 @@ button.swiper-pagination-bullet {
 	100% {
 		transform: rotate(360deg);
 	}
+<<<<<<< HEAD
+}
+=======
 }
 
 /* Coursel and slider */
@@ -4867,3 +4895,4 @@ button.swiper-pagination-bullet {
 .owl-carousel .owl-buttons .owl-next .lg-icon::before {
 	content: "\e095";
 }
+>>>>>>> 3660d10a35faeccf410ce2855c1d7618aff2f5f3

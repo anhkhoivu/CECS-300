@@ -18,7 +18,6 @@ Version: 1.0.0
     margin-right: auto;
 }
 
-
 /* Story and Facts Archive Page CSS */
 /* --------------------------------------------- */
 #story-description, #fact-description, .swiper-slide-desc{
@@ -51,12 +50,16 @@ Version: 1.0.0
 	color: #0D5591;
 }
 
-*:focus
+.site-footer *:focus
 {
-	color: #0D5591;
+	border: 1px solid #FFFFE0;
+	color: #FFFFE0;
 }
+<<<<<<< HEAD
+=======
 /* Fellow Activists Page CSS */
 /* --------------------------------------------- */
+>>>>>>> 142488132ac4557d88631fe8603ba83a6d92af49
 
 #client0 img {
   margin-top: 13%;
