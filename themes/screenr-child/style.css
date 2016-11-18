@@ -6,6 +6,128 @@ Template: screenr
 Version: 1.0.0
 */
 
+/*  Header and Nav  */
+.site-header {
+    line-height: 85px;
+    position: relative;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 99;
+    -webkit-transition: all 1s ease-out;
+    transition: all .5s ease-out;
+}
+
+.site-branding .site-title a, .site-branding .site-description {
+    color: #FFF;
+}
+
+.site-branding .site-title a, .site-branding .site-description:hover {
+
+}
+
+.swiper-slider .swiper-slide {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #222222;
+    margin-bottom: -85px;
+  }
+
+.nav-menu a {
+    color: #FFF;
+    padding-left: 17px;
+    padding-right: 17px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    zoom: 1;
+}
+
+.nav-menu a {
+
+}
+/*  Header and Nav END  */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #555555;
+}
+
+h1 {
+font-family: "Montserrat", sans-serif;
+}
+
+.section-title {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*  Button & Card Colors  */
+.btn-theme-primary {
+    background: #16b7a7e6;
+    color: #FFFFFF;
+}
+#mc_signup_submit {
+    background: #16b7a7e6;
+}
+#gform_submit_button_2 {
+    background: #16b7a7e6;
+}
+
+#gform_submit_button_3 {
+    background: #16b7a7e6;
+}
+
+#search-2 .search-submit {
+background: #16b7a7e6;
+}
+
+.sidebar .widget .search-form .search-field {
+    width: 100% !important;
+    padding: 10px 15px;
+    padding: 0.625rem 0.9375rem;
+    color: black;
+}
+
+#mc_mv_EMAIL {
+color:#000;
+}
+#mc_mv_FNAME {
+color:#000;
+}
+#mc_mv_LNAME {
+color:#000;
+}
+#mc_mv_ZIPCODE {
+color:#000;
+}
+
+#submit {
+    background: #16b7a7e6;
+}
+
+#mailchimpsf_widget-3 h1 {
+    font-size: 20px;
+      color: rgba(255, 255, 255, 0.9);
+}
+
+.entry-content blockquote {
+    border-left: 3px solid #16b7a7e6;
+}
+.section-news .entry-grid-elements {
+    border-top: 3px solid #16b7a7e6;
+}
+.services-content .card {
+    border-top: 3px solid #16b7a7e6;
+}
+/*  Button & Card Colors END */
+
 
 /*#item1 {
     background-image: url("/wp-content/uploads/2016/10/item1.png");
@@ -16,6 +138,18 @@ Version: 1.0.0
     background-image: url(/wp-content/uploads/2016/10/item1.png);
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Menu */
+.visually-hidden {
+	border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 
 /* Story and Facts Archive Page CSS */
@@ -79,6 +213,10 @@ Version: 1.0.0
 
 #client4 img {
   margin-top: 8%;
+}
+
+#client5 img {
+  margin-top: 7%;
 }
 
 .client-col img {
