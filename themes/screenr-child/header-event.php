@@ -35,7 +35,7 @@
     }
 
     ?>
-	<header id="masthead" class="<?php echo esc_attr( join( ' ', $header_classes ) );?>" role="banner">
+	<header id="masthead" class="<?php echo esc_attr( join( ' ', $header_classes ) );?>" role="banner" style="background: rgba(0,0,0,1); position: relative;">
 		<div class="container">
 			<div class="site-branding">
 				<?php
