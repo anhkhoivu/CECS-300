@@ -46,7 +46,7 @@ function screenr_page_header_cover_stories()
 	$post_type = 'stories';
 				
 	$title = 'Stories';
-	$image = '/wp-content/images/father.jpg';
+	$image = '/wp-content/uploads/2016/10/father.jpg';
 	$desc = $wp_post_types[$post_type]->description;
 	
 	
@@ -115,7 +115,6 @@ function screenr_page_header_cover_stories()
                     $html .= '<h2 class="swiper-slide-heading">'.wp_kses_post( $item['title'] ).'</h2>';
                 }
                 if ( $item['desc'] ) {
-					
                     $html .= '<div class="swiper-slide-desc">'.apply_filters( 'screenr_content_text', $item['desc'] ).'</div>';
                 }
 
@@ -172,7 +171,7 @@ function screenr_page_header_cover_facts()
 	$post_type = 'facts';
 	
 	$title = 'The Facts';
-	$image = '/wp-content/images/family.jpg';
+	$image = '/wp-content/uploads/2016/10/family.jpg';
 	$desc = $wp_post_types[$post_type]->description;
 
 	
