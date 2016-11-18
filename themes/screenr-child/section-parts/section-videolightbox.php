@@ -10,6 +10,9 @@ if ( ! screenr_is_selective_refresh() ) {
     $classes = 'section-videolightbox section-padding section-padding-larger section-inverse onepage-section';
     if ( $parallax_url ) {
     ?>
+    <div id ="video-transcript">
+        <a href="/video-transcript">Read Transcript of the video "Can You Read My Lips?"</a>
+    </div>
     <div class="parallax-videolightbox parallax-window" data-over-scroll-fix="true" data-z-index="1" data-speed="0.3" data-image-src="<?php echo esc_url( $parallax_url ); ?>" data-parallax="scroll" data-position="center" data-bleed="0">
     <?php } ?>
     <section id="<?php echo esc_attr( get_theme_mod( 'videolightbox_id', 'video' ) ); ?>" class="<?php echo esc_attr( apply_filters( 'screenr_section_class', $classes, 'videolightbox' ) ); ?>">
@@ -26,9 +29,7 @@ if ( ! screenr_is_selective_refresh() ) {
         </div>
 <?php if ( ! screenr_is_selective_refresh() ) { ?>
     </section>
-    <div id ="video-transcript">
-        <a href="/video-transcript">Read Transcript of the video "Can You Read My Lips?"</a>
-    </div>
+
     <?php
     if ( $parallax_url ) { ?>
         </div>
