@@ -9,7 +9,7 @@ Version: 1.0.0
 /*  Header and Nav  */
 .site-header {
     line-height: 85px;
-    position: relative;
+    position: fixed;
     width: 100%;
     background: rgba(0, 0, 0, 0.7);
     z-index: 99;
@@ -229,6 +229,15 @@ color:#000;
 	-moz-transform: scale(1.15);
   -webkit-transform: scale(1.15);
   transform: scale(1.15);
+}
+.nav-menu ul li a {
+    background: black;
+}
+#nav-toggle span::before, #nav-toggle span::after {
+    background: #fff;
+}
+#nav-toggle span {
+    background: #fff;
 }
 
 /* --------------------------------------------- */
