@@ -41,13 +41,14 @@ Version: 1.0.0
 
 
 .nav-menu a:hover
-{
-	color: #0D5591;
+{		
+	color: #B7FE12;
 }
 
 .nav-menu a:focus
 {
-	color: #0D5591;
+	color: #B7FE12;
+	border: 1px solid #B7FE12;
 }
 
 .site-footer *:focus
