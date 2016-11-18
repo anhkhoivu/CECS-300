@@ -115,6 +115,7 @@ function screenr_page_header_cover_stories()
                     $html .= '<h2 class="swiper-slide-heading">'.wp_kses_post( $item['title'] ).'</h2>';
                 }
                 if ( $item['desc'] ) {
+					
                     $html .= '<div class="swiper-slide-desc">'.apply_filters( 'screenr_content_text', $item['desc'] ).'</div>';
                 }
 
