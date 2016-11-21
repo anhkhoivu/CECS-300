@@ -72,7 +72,7 @@ if ( ! screenr_is_selective_refresh() ) {
                     $items_post_links = array("/facts/lipreaders-miss-out-on-up-to-90-of-the-conversation/",
                             "/facts/one-out-of-three-deaf-kids-cannot-communicate-with-their-family/",
                             "/facts/over-95-of-deaf-children-are-born-to-hearing-parents/");
-                    echo '<a href="'.$items_post_links[$count-1].'" title="'.$items_alt_text[$count-1].'"><img src="/wp-content/uploads/2016/10/item'.$count.'.png" alt=""></a>';
+                    echo '<a href="'.$items_post_links[$count-1].'" title = "'.$items_alt_text[$count-1].'"><img src="/wp-content/uploads/2016/10/item'.$count.'.png" alt = ""></a>';
                     switch ($item['thumb_type']) {
                         case 'icon':
                             if ($item['icon']) {
