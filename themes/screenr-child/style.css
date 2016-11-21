@@ -300,3 +300,8 @@ color:#000;
 	padding: 0px;
 	color: black;
 }
+
+#expand-collapse {
+border:0;
+background: transparent;
+} 
