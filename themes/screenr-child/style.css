@@ -235,9 +235,7 @@ color:#000;
 /* --------------------------------------------- */
 /* Fellow Activists Page CSS */
 
-.nav-menu ul li a {
-    background: black;
-}
+
 #nav-toggle span::before, #nav-toggle span::after {
     background: #fff;
 }
@@ -264,7 +262,8 @@ color:#000;
 }
 
 .nav-menu ul li a {
-  color: rgba(0,0,0,0.7);
+  color:white;
+  background-color: rgba(0,0,0,0.7);
 }
 
 .nav-menu ul li a:hover, a:focus {
