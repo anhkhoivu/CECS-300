@@ -1,4 +1,8 @@
 jQuery(document).ready(function(){
+	jQuery('.nav-menu li.menu-item-has-children, .nav-menu li.page_item_has_children').each( function() {
+        jQuery(this).append('<div class="nav-toggle-subarrow" aria-label="submenu"><i class="fa fa-angle-down"></i></div>');
+	});
+	jQuery('.nav-menu li .nav-toggle-subarrow').attr('tabindex',"0");
 	jQuery(".nav-menu li:has('ul')").on("focusout", function(){
 		//console.log(jQuery(this));
 		var sel = jQuery(this);
@@ -82,6 +86,12 @@ jQuery(document).ready(function(){
 			console.log("resize");
 			jQuery( "#site-navigation > ul" ).removeClass("nav-menu-mobile");
 			jQuery( "#nav-toggle" ).removeClass("nav-is-visible");
+			if(jQuery("#nav-toggle").attr("class") === "nav-is-visible"){
+				jQuery(".expand").css("display", "none");
+			}
+			else{
+				jQuery(".expand").css("display", "inline");
+			}
 		}
 	  
 	});
