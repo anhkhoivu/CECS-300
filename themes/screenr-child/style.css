@@ -304,4 +304,49 @@ color:#000;
 #expand-collapse {
 border:0;
 background: transparent;
-} 
+}
+
+#content :link:focus, :visited:focus {
+    outline: none !important;
+    border: 3px solid #0E7A12 !important;
+}
+
+button:focus {
+    outline: 0 !important;
+    background-color: none;
+    border: 3px solid #0E7A12 !important;
+}
+
+.nav-menu a:focus {
+    outline: 0 !important;
+    border: 3px solid #FFF !important;
+}
+
+#expand-collapse:focus {
+  border: 3px solid #FFF !important;
+}
+
+#colophon :link:focus, :visited:focus {
+  outline: 0 !important;
+  border: 3px solid #FFF !important;
+}
+
+#mc_signup_submit:focus {
+  outline: 0 !important;
+  border: 3px solid #FFF !important;
+}
+
+#search-2 .search-submit:focus {
+  outline: 0 !important;
+  border: 3px solid #FFF !important;
+}
+
+#mc_signup_form .mc_input:focus {
+  outline: 0 !important;
+  border: 3px solid #870a0a !important;
+}
+
+.sidebar .widget .search-form .search-field:focus {
+  outline: 0 !important;
+  border: 3px solid #870a0a !important;
+}
