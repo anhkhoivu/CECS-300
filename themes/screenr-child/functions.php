@@ -299,3 +299,27 @@ function screenr_loop_post_item( $post_class = '')
 }
 
 ?>
+
+
+<?php
+	/**
+	 * Add custom footer theme info.
+	 */
+	function screenr_footer_credits2(){
+		?>
+		<div class=" site-info">
+			<div class="container">
+				<div class="site-copyright">
+					<?php printf(esc_html__('Copyright %1$s %2$s %3$s. All Rights Reserved.', 'screenr'), '&copy;', date_i18n('Y'), get_bloginfo() ); ?>
+				</div><!-- .site-copyright -->
+				
+				<div id="switcher">
+					<?php global $wpUserStylesheetSwitcher; $wpUserStylesheetSwitcher->show_wp_user_stylesheet_switcher(array('switcher_id'=>'s0', 'list_title'=>'Available Styles ', 'show_list_title'=>'true', 'list_type'=>'dropdown'));?>
+				</div>
+				
+			</div>
+		</div><!-- .site-info -->
+		<?php
+	}
+	add_action( 'screenr_footer_custom', 'screenr_footer_credits2' );
+?>

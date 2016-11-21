@@ -295,3 +295,8 @@ color:#000;
     color: #870a0a;
     padding-left: 40px;
 }
+
+#switcher select{
+	padding: 0px;
+	color: black;
+}

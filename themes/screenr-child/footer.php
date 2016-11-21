@@ -69,7 +69,7 @@
 			</div>
 		<?php }  ?>
 
-        <?php do_action( 'screenr_footer' ); ?>
+        <?php do_action( 'screenr_footer_custom' ); ?>
 
 	</footer><!-- #colophon -->
 </div><!-- #page -->
