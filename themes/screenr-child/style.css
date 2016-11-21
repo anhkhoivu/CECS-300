@@ -49,9 +49,7 @@ Version: 1.0.0
     zoom: 1;
 }
 
-.nav-menu a {
 
-}
 /*  Header and Nav END  */
 
 body {
@@ -70,22 +68,22 @@ font-family: "Montserrat", sans-serif;
 
 /*  Button & Card Colors  */
 .btn-theme-primary {
-    background: #16b7a7e6;
+    background: #870a0a;
     color: #FFFFFF;
 }
 #mc_signup_submit {
-    background: #16b7a7e6;
+    background: #870a0a;
 }
 #gform_submit_button_2 {
-    background: #16b7a7e6;
+    background: #870a0a;
 }
 
 #gform_submit_button_3 {
-    background: #16b7a7e6;
+    background: #870a0a;
 }
 
 #search-2 .search-submit {
-background: #16b7a7e6;
+background: #870a0a;
 }
 
 .sidebar .widget .search-form .search-field {
@@ -109,7 +107,7 @@ color:#000;
 }
 
 #submit {
-    background: #16b7a7e6;
+    background: #870a0a;
 }
 
 #mailchimpsf_widget-3 h1 {
@@ -118,13 +116,13 @@ color:#000;
 }
 
 .entry-content blockquote {
-    border-left: 3px solid #16b7a7e6;
+    border-left: 3px solid #870a0a;
 }
 .section-news .entry-grid-elements {
-    border-top: 3px solid #16b7a7e6;
+    border-top: 3px solid #870a0a;
 }
 .services-content .card {
-    border-top: 3px solid #16b7a7e6;
+    border-top: 3px solid #870a0a;
 }
 /*  Button & Card Colors END */
 
@@ -175,14 +173,17 @@ color:#000;
 
 
 .nav-menu a:hover
-{		
-	color: #B7FE12;
+{
+	color: #74ada6;
 }
 
 .nav-menu a:focus
 {
-	color: #B7FE12;
-	border: 1px solid #B7FE12;
+	color: #74ada6;
+}
+
+#footnav a{
+  padding: 4.3px;
 }
 
 .site-footer *:focus
@@ -231,6 +232,9 @@ color:#000;
   -webkit-transform: scale(1.15);
   transform: scale(1.15);
 }
+/* --------------------------------------------- */
+/* Fellow Activists Page CSS */
+
 .nav-menu ul li a {
     background: black;
 }
@@ -241,5 +245,54 @@ color:#000;
     background: #fff;
 }
 
-/* --------------------------------------------- */
-/* Fellow Activists Page CSS */
+.nav-menu li.current-menu-item > a {
+    color: #FFF;
+}
+
+.nav-menu.nav-menu-mobile li {
+  background: rgba(0,0,0,0.7);
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+}
+
+.nav-menu.nav-menu-mobile li a {
+  color: white;
+}
+
+.nav-menu.nav-menu-mobile li a:hover, a:focus {
+  color: #74ada6;
+}
+
+.nav-menu ul li a {
+  color: rgba(0,0,0,0.7);
+}
+
+.nav-menu ul li a:hover, a:focus {
+  color: #74ada6;
+}
+
+.nav-menu ul li {
+  border: 1px solid #FFF;
+}
+
+.nav-menu.nav-menu-mobile li ul li a {
+  color: white;
+}
+
+.nav-menu.nav-menu-mobile li ul li a:hover, a:focus {
+  color: #74ada6;
+}
+
+.nav-menu.nav-menu-mobile .nav-toggle-subarrow {
+  border-left: 1px solid #FFF;
+  color: #FFF;
+}
+
+.swiper-slider .activated .swiper-intro-inner h1, .swiper-slider .activated .swiper-intro-inner h2, .swiper-slider .activated .swiper-intro-inner h3, .swiper-slider .activated .swiper-intro-inner h4, .swiper-slider .activated .swiper-intro-inner p, .swiper-slider .activated .swiper-intro-inner div {
+    text-shadow: 0 0 3px #000000,0 0 10px #000000, 0px 0 25px #000000, 0px 0 50px #000000;
+}
+
+#video-transcript a {
+    color: #870a0a;
+    padding-left: 40px;
+}
