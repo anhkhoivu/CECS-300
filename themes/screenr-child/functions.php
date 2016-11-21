@@ -303,7 +303,7 @@ function screenr_loop_post_item( $post_class = '')
 
 <?php
 	/**
-	 * Add footer theme info
+	 * Add custom footer theme info
 	 */
 	function screenr_footer_credits2(){
 		?>
